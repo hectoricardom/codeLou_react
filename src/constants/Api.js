@@ -1,7 +1,7 @@
 
 
-export const GRAPHQLURL33 = "https://hrminventory.com";
-export const GRAPHQLURL = "http://localhost:8080";
+export const GRAPHQLURL = "https://hrminventory.com";
+export const GRAPHQLURL9 = "http://localhost:8080";
 
 
 

@@ -400,25 +400,26 @@ function mapStateToProps42(state, ownProps) {
 
 
 
-
- function download(content, fileName, contentType) {
-   var a = document.createElement("a");
-   var file = new Blob([content], {type: contentType});
-   a.href = URL.createObjectURL(file);
-   a.download = fileName;
-   a.click();
- }
-
- function date2pretyfy(dt) {
-   var date = !isNaN(dt)?new Date(parseInt(dt.toString())):new Date();   
-   return `${Util.monthsList_Short[date.getMonth()+1]} ${date.getDate()}, ${date.getFullYear()}  ${date.getHours()}:${date.getMinutes()} `;  
- }
+ 
+/********
+ * 
+ * 
+ * 
+ *      Function to Print
+ * 
+ * 
+ * 
+ */
 
 
+ 
  function pretifyDate(dt) {
    var date = !isNaN(dt)?new Date(parseInt(dt.toString())):new Date();   
    return `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`;  
  }
+
+
+
 
  function sumPn(arr1,key) {
    key=key?key:'partNumber';
@@ -445,12 +446,8 @@ function mapStateToProps42(state, ownProps) {
 
  
  function Print_Location_Label(location){
-
-   
-
-   
    var _id = location.id;
-   var pn_l = sumPn(location.serialNumbers,'partNumber');
+   var pn_l = location.serialNumbers ? sumPn(location.serialNumbers,'partNumber'):{};
  
    
    var b_code = getBase64FromBarCode(_id);   
@@ -471,7 +468,6 @@ function mapStateToProps42(state, ownProps) {
    doc.setFontType("normal");
    doc.text(1.81, hguide+1, pretifyDate('dater'));
    Object.keys(pn_l).map(s=>{
-
       var _bc = getBase64FromBarCode(s)
       var _qc = getBase64FromQRCode(s);
       doc.setFontSize(22);
