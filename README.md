@@ -1,6 +1,7 @@
 # codeLou_react
  
-    Code Louisville React Project.
+ <h2 align="center">Code Louisville React Project.</h2>
+    
 
 * This project is a small Inventory app.
 
@@ -11,8 +12,6 @@
 
 ## Installation
 
-
-<h2 align="center">Install</h2>
 
 Install dependence with npm:
 
