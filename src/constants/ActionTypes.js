@@ -1,0 +1,40 @@
+
+
+
+
+export const APPLOADED_SUCCESS = 'APPLOADED_SUCCESS';
+
+export const ISMOBILE_SUCCESS = 'ISMOBILE_SUCCESS';
+
+export const SCREEN_SIZE = 'SCREEN_SIZE';
+
+
+
+export const CURRENT_PATH = 'CURRENT_PATH';
+
+export const FORMS_SUCCESS = 'FORMS_SUCCESS';
+
+export const FORMS_OBSERVES = 'FORMS_OBSERVES';
+
+export const VALIDATIONFORMS_SUCCESS = 'VALIDATIONFORMS_SUCCESS';
+
+export const USER_SUCCESS = 'USER_SUCCESS';
+
+export const AUTHENTICATE_SUCCESS = 'AUTHENTICATE_SUCCESS';
+
+export const UPD_KEY_VALUE = 'UPD_KEY_VALUE';
+
+
+
+
+
+
+
+
+
+
+/********************************* */
+
+
+export const UPD_KEY_VALUE_DIALOGS = 'UPD_KEY_VALUE_DIALOGS';
+

@@ -1,0 +1,349 @@
+/*
+--color-base--hover:
+*/
+
+
+
+
+.headerMobileLogo {
+    background-color: var(--color-base--hover);
+    height: 60px;
+    position: relative;
+    
+}
+
+.headerMobileLogo .email_content {    
+    padding: 20px 0;  
+    font: 500 17px/19px "Google Sans","Roboto","Arial","Open Sans",sans-serif;
+    color:#eee;
+}
+
+
+.headerMobileLogo .logo {
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    top: auto;
+    width: auto;
+    color: #fff;
+}
+
+.headerMobileLogo svg {
+    fill: var(--color-logo_);
+    fill-rule:nonzero;
+    bottom: -20px;
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    top: auto;
+    width: 200px;
+}
+
+
+/*****************************************************  NAV    *****************************************************************/
+
+
+
+
+
+.toggle-theme{
+    position: relative;
+    padding: 18px 15px 18px 0;
+    text-align: center;
+    width: 24px;
+    height: 24px;  
+    cursor: pointer;
+}
+
+.toggle-theme svg{
+    fill: var(--fill--theme--color);
+}
+
+
+
+/*****************************************************  TAB INDICATOR    *****************************************************************/
+
+
+
+
+.c-tabs-nav__indicator {
+    background: var(--color-base--hover);
+    bottom: 0;
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    -webkit-transition: left, width;
+    transition: left, width;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+
+
+
+/*****************************************************  NAV    *****************************************************************/
+
+
+.left_Header .c-toggle {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    height: 14px;
+    line-height: normal;
+    margin: 20px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.left_Header {
+    will-change: transform;
+}
+
+.left_Header .navBox {
+    float: right;
+    display: flex;
+    position: relative;
+}
+
+.left_Header .navBox [role='menubar'] {
+    margin: 2px 75px 2px 0;
+}
+
+.navBox [role='menubar'] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navBox [role='menubar'] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navBox [role='menuitem'] {
+    font-size: 14px;
+    font-size: .875rem;
+    letter-spacing: -.56px;
+    letter-spacing: -.035rem;
+    color: var(--tab--nav-Color--);
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    line-height: 1.35;
+    padding: 20px;
+    text-transform: uppercase;
+    outline: none;
+}
+.navBox [role='menuitem']:active, .navBox [role='menuitem']:focus, .navBox [role='menuitem']:hover {
+    /*color: var(--color-base--hover);*/
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*****************************************************  NAV ON SLIDE MENU    *****************************************************************/
+
+.navSlideBox [role='slide_item'] {
+    
+    cursor: pointer;
+    display: flex;
+    padding: 20px;    
+    outline: none;
+    text-decoration: none;
+}
+
+.navSlideBox [role='menubar'] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navSlideBox [role='slide_item'] .icon {
+    max-width: 35%;
+    margin-right: 25px;
+
+}
+
+.navSlideBox [role='slide_item'] .icon svg {
+    fill:var(--tab--nav-Color--);
+
+}
+
+
+.navSlideBox [role='slide_item'] .text {
+    letter-spacing: -.56px;
+    letter-spacing: -.035rem;
+    color: var(--tab--nav-Color--);
+    padding: 2px 7px;
+    font-weight: normal;
+    line-height: 1.35;
+    text-transform: capitalize;   
+    max-width: 60%;
+    font: 300 16px/19px "Roboto","Arial","Open Sans",sans-serif;
+}
+
+.navSlideBox ._activeNav [role='slide_item'] .text {    
+    color: var(--color-base--hover);
+    font: 500 17px/19px "Roboto","Arial","Open Sans",sans-serif;
+}
+
+.navSlideBox ._activeNav [role='slide_item'] .icon svg {    
+    fill: var(--color-base--hover);
+}
+
+/***************************************************** LEFT HEADER *****************************************************************/
+
+
+.left_Header.in-transition, .left_Header.left_Header--locked {
+    -webkit-transition: -webkit-transform .3s cubic-bezier(0.35, 0, 0.25, 1);
+    transition: -webkit-transform .3s cubic-bezier(0.35, 0, 0.25, 1);
+    transition: transform .3s cubic-bezier(0.35, 0, 0.25, 1);
+    transition: transform .3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform .3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.left_Header.is-fixed, .left_Header.left_Header--locked {
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+
+.left_Header {
+    background-color: var(--background--color);
+    height: 60px;
+    position: relative;
+    z-index: 200;
+}
+
+
+.left_Header .logo {    
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    width: 200px;
+}
+
+.left_Header .logo svg {
+    fill: var(--color-logo_);
+    fill-rule: nonzero;    
+}
+
+
+
+.header--title--component{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    -webkit-transform: translate(-20,0);
+    transform: translate(-20,0);
+    -webkit-transition: transform .15s ease;
+    transition: transform .15s ease;
+    padding: 2px 17px 2px 2px;
+    color: var(--color-base--hover);
+    font: 600 17px/19px "Google Sans","Roboto","Arial","Open Sans",sans-serif;
+}
+
+
+
+
+.header--title--component.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-120px,20px);
+    transform: translate(-120px,20px);    
+    -webkit-transition: opacity .15s ease,transform .15s ease,visibility 0s linear .15s;
+    transition: opacity .15s ease,transform .15s ease,visibility 0s linear .15s;
+}
+
+
+
+
+.header--token--component{
+    background-color: var(--color-base--hover);
+    border-radius: 50%;
+    height: 20px;
+    width: 25px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.header--token--component.is-expired{
+    background-color:#9F9f9f;
+}
+
+
+
+/***************************************************** LEFT HEADER *****************************************************************/
+
+
+
+
+
+.navBox .menuitem {
+    font-size: 14px;
+    font-size: .875rem;
+    letter-spacing: -.56px;
+    letter-spacing: -.035rem;
+    color: var(--tab--nav-Color--);
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    line-height: 1.35;
+    padding: 20px;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+    font: 600 13px/19px "Roboto","Arial","Open Sans",sans-serif;
+}
+
+
+.navBox .menuitem:hover {
+    color: var(--color-base--hover);
+    text-decoration: none;
+    font: 600 13px/19px "Roboto","Arial","Open Sans",sans-serif;
+}
+
+.navBox ._activeNav .menuitem {
+    color: var(--color-base--hover);
+    text-decoration: none;
+    font: 600 13px/19px "Roboto","Arial","Open Sans",sans-serif;
+}
+
+
+
+@media only screen and (max-width: 720px){
+    .left_Header .c-toggle {
+        display: inline-block;
+    }
+    .left_Header .navBox {
+        display: none;
+    }
+}

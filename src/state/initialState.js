@@ -1,0 +1,31 @@
+export default {
+  common:{
+    authenticate:false,    
+    user:{},
+    users:[],
+    isMobile:false,    
+    appLoaded:false,  
+    path:'',    
+    partNumbers:{},
+    locations:{},
+    forms:{},
+    serialNumbers:{},
+    validationForms:{},
+    formObserve:0,
+    screen_size:0,
+    isValidToken:false,
+    grabbing:false,
+    phonecode:'',
+    SubscriptionId:null,
+    sortbypn:{},
+    locationOberves:0,
+    receiving:{},
+    audit:{}
+  },
+  dialog:{
+    dialogs:{},
+    views:{},
+    options_slide:{},
+    dialogObserve:0
+  }
+}
