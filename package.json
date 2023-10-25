@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "crypto-js": "^3.1.9-1",
+    "crypto-js": "^4.2.0",
     "estraverse": "^4.2.0",
     "firebase": "^6.1.0",
     "isomorphic-fetch": "^2.2.1",
